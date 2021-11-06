@@ -608,7 +608,7 @@ figure {
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
-  color: yellow;
+  color: grey;
 }
 
 .timeline-body > p + p {
@@ -1284,7 +1284,7 @@ input[type="text"] {
 }
 
 .col-padding {
-  padding: 6px !important;
+  padding: 0px !important;
   margin: 0px !important;
 }
 
@@ -1300,6 +1300,10 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.timeline-body1 span {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
