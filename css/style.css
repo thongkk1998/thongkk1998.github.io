@@ -76,6 +76,7 @@ body {
 
 .navbar-nav a {
   color: orangered;
+  font-weight: bold;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1326,6 +1327,105 @@ input[type="text"] {
   height: 100%;
   z-index: 9999;
   background: url(../images/loader.gif) center no-repeat #fff;
+}
+
+.footer-bar {
+  padding: 22px 0;
+  background: #2f2f2f;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 13px;
+  color: #b8b8b8;
+  text-align: center;
+}
+
+.footer-social {
+  margin-top: 30px;
+}
+
+.footer-social ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-social li {
+  margin: 0 15px;
+}
+
+.footer-social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: #74797e;
+}
+
+.footer-social li a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright p {
+    text-align: left;
+  }
+
+  .footer-social {
+    margin-top: 0;
+  }
+
+  .footer-social li {
+    margin: 0 0 0 30px;
+  }
+}
+
+.recent-work {
+  width: 100%;
+  padding-bottom: 27%;
+  background: #c3c9cc;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 27%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.recent-work span {
+  margin-top: -18px;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+}
+.recent-work:before {
+  background: rgba(2, 56, 58, 0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  opacity: 0;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.recent-work:hover {
+  background-size: 200%;
+  background-position: center;
+}
+.recent-work:hover:before,
+.recent-work:hover span {
+  opacity: 1;
 }
 
 .js .animate-box {
