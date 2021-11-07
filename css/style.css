@@ -35,7 +35,7 @@ body {
   font-family: "Oswald", sans-serif;
   margin-top: 11px;
   font-size: 26px;
-  font-weight: 300;
+  font-weight: bold;
   letter-spacing: 2px;
 }
 
@@ -380,7 +380,7 @@ figure {
 .info li .first-block {
   width: 40%;
   display: inline-block;
-  float: left;
+
   color: #000;
   font-weight: bold;
 }
@@ -854,70 +854,6 @@ figure {
   padding-right: 50px;
 }
 
-.fh5co-blog {
-  width: 100%;
-  float: left;
-  margin-bottom: 40px;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-blog {
-    width: 100%;
-  }
-}
-.fh5co-blog .blog-bg {
-  display: block;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 300px;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-blog .blog-bg {
-    height: 400px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .fh5co-blog .blog-bg {
-    height: 270px;
-  }
-}
-.fh5co-blog .blog-text {
-  margin-bottom: 30px;
-  position: relative;
-  width: 100%;
-  padding: 30px;
-  float: left;
-  background: #fff;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-blog .blog-text {
-    padding: 10px;
-  }
-}
-.fh5co-blog .blog-text span {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 18px !important;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.fh5co-blog .blog-text h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-.fh5co-blog .blog-text h3 a {
-  color: black;
-}
-
 #fh5co-consult {
   display: -webkit-box;
   display: -moz-box;
@@ -1383,49 +1319,51 @@ input[type="text"] {
   }
 }
 
-.recent-work {
-  width: 100%;
-  padding-bottom: 27%;
-  background: #c3c9cc;
-  display: table;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 27%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  margin-bottom: 30px;
+.footer-instagram {
+  margin-top: 60px;
+  display: flex;
 }
 
-.recent-work span {
-  margin-top: -18px;
-  opacity: 0;
-  position: relative;
-  z-index: 1;
+.footer-instagram figure {
+  width: 33.333333%;
+  margin: 0;
 }
-.recent-work:before {
-  background: rgba(2, 56, 58, 0.7);
-  height: 100%;
+
+.footer-instagram figure img {
+  display: block;
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-  opacity: 0;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
-.recent-work:hover {
-  background-size: 200%;
-  background-position: center;
+
+@media screen and (min-width: 576px) {
+  .footer-instagram figure {
+    width: 25%;
+    margin: 0;
+  }
 }
-.recent-work:hover:before,
-.recent-work:hover span {
-  opacity: 1;
+
+@media screen and (min-width: 768px) {
+  .footer-instagram figure {
+    width: 20%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-instagram figure {
+    width: auto;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-instagram {
+    margin-top: 100px;
+  }
+
+  .footer-instagram figure img {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+  }
 }
 
 .js .animate-box {
